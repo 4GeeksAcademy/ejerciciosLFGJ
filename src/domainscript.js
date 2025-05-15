@@ -3,16 +3,16 @@ let adj = ['great', 'big'];
 let noun = ['jogger','racoon','travelus', 'puedes'];
 let extensions = ['.com', '.net', '.us', '.io','.es'];
 
-for (let rnd1 of pronoun){
-    for (let rnd2 of adj){
-        for (let rnd3 of noun){
-            for (let rnd4 of extensions){
-                let dominio = rnd1+rnd2+rnd3+rnd4;
+for (let pronomb of pronoun){
+    for (let adjeti of adj){
+        for (let sustan of noun){
+            for (let dotext of extensions){
+                let dominio = pronomb+adjeti+sustan+dotext;
 
-                let sinext = rnd3;
-                let conext = rnd4.replace('.','');
+                let sinext = sustan;
+                let conext = dotext.replace('.','');
                 if (sinext.endsWith(conext)){
-                    console.log(rnd1+rnd2+sinext.slice(0, -conext.length)+'.'+conext)
+                    console.log(pronomb+adjeti+sinext.slice(0, -conext.length)+'.'+conext)
                 } else{
                 console.log(dominio)
                 }   
